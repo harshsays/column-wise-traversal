@@ -1,0 +1,17 @@
+# column-wise-traversal
+//Given a matrix, ‘A’ of size ‘N’ * ‘M’, you must traverse the matrix column-wise.
+//You must return an integer array of size ‘N’ * ‘M’ denoting the column-wise traversal of the matrix.
+
+
+public static int[] printColWise(int [][]a) {
+        int arr[]=new int[a.length*a[a.length-1].length];
+        int k=0;
+        for(int i=0;i<a[0].length;i++){
+            for(int j=0;j<a.length;j++) {
+                arr[k]=a[j][i];
+                k++;
+            }
+        }
+return arr;
+    
+    }
